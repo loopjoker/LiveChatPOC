@@ -8,6 +8,13 @@
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
+			embedded_svc.settings.prepopulatedPrechatFields = {
+    FirstName: “John”,
+    LastName: “Doe”,
+    Email: “john.doe@salesforce.com”,
+    Subject: “Hello”
+};
+
 			embeddedservice_bootstrap.init(
 				'00Dbm00000Jp5qj',
 				'Availity_POC',
